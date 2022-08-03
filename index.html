@@ -18,19 +18,19 @@
     <!-- Configure SystemJS -->
     <script>
         System.config({
-            packages: {
+            packages: { /* this 'packages' keyword here tells the system.js what to do whenever it sees a new file */ 
                 app: {
                     format: 'register',
                     defaultExtension: 'js'
                 }
             }
         });
-        System.import('app/js/main').then(null, console.error.bind(console));
+        System.import('app/js/main').then(null, console.error.bind(console)); /* this is a cal to the main file, i.e. a strating point for the SystemJS */ 
     </script>
 </head>
 <body>
 <div class="container-fluid">
-    <my-app>Loading...</my-app>
+    <app>LOADING...</app>
 </div>
 </body>
 </html>
